@@ -1,5 +1,6 @@
 # MicroAuthElement
 A micro-frontend(**mife**...like "wife":) bootstrap that authenticates mife users against Firebase and provides access to a configured mife [realm](https://github.com/Micro-cosm/micro-realm).
+Similar to [micro-auth](https://github.com/Micro-cosm/micro-auth), but makes use of preexisting Angular elements for several UI components.
 
 To encourage rapid iteration/deployment, this project is configured to use [bin-zsh](https://github.com/wejafoo/bin-zsh).
 
