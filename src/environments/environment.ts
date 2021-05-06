@@ -15,27 +15,27 @@ const	CMS_SHEET 			= process.env.CMS_SHEET 			|| 'https://docs.google.com/spread
 
 //  LESS FREQUENT -- MIFE ADDS/UPDATES
 	// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////	GLOBAL CONSTANTS
-	const LOCAL_PROTOCOL 			= process.env.LOCAL_PROTOCOL			|| 'http://';
-	const REMOTE_PROTOCOL			= process.env.REMOTE_PROTOCOL			|| 'https://';
-	const THIS_PROTOCOL				= process.env.THIS_PROTOCOL				|| REMOTE_PROTOCOL;
-	const STAGE_REMOTE_REALM_BASE	= process.env.STAGE_REMOTE_REALM_BASE	|| REMOTE_PROTOCOL + 'too.fb.' + TARGET_DOMAIN;
-	const PROD_REMOTE_REALM_BASE	= process.env.PROD_REMOTE_REALM_BASE	|| REMOTE_PROTOCOL + 'foo.fb.' + TARGET_DOMAIN;
+	const LOCAL_PROTOCOL 				= process.env.LOCAL_PROTOCOL			|| 'http://';
+	const REMOTE_PROTOCOL				= process.env.REMOTE_PROTOCOL			|| 'https://';
+	// const THIS_PROTOCOL				= process.env.THIS_PROTOCOL				|| REMOTE_PROTOCOL;
+	// const STAGE_REMOTE_REALM_BASE	= process.env.STAGE_REMOTE_REALM_BASE	|| REMOTE_PROTOCOL + 'too.fb.' + TARGET_DOMAIN;
+	const PROD_REMOTE_REALM_BASE		= process.env.PROD_REMOTE_REALM_BASE	|| REMOTE_PROTOCOL + 'foo.fb.' + TARGET_DOMAIN;
 	// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////	LOCALLY REGISTERED SERVICES
-	const LOCAL_REALM_BASE 			= process.env.LOCAL_REALM_BASE			|| LOCAL_PROTOCOL	+ 'localhost:';
-	const AUTH_LOCAL_SERVICE		= process.env.AUTH_LOCAL_SERVICE		|| LOCAL_REALM_BASE	+ '4410/auth/#/';
-	const CHAT_LOCAL_SERVICE		= process.env.CHAT_LOCAL_SERVICE		|| LOCAL_REALM_BASE	+ '4415/chat/#/';
-	const CMS_LOCAL_SERVICE			= process.env.CMS_LOCAL_SERVICE			|| LOCAL_REALM_BASE	+ '4411/cms/#/';
-	const FORM_LOCAL_SERVICE		= process.env.FORM_LOCAL_SERVICE		|| LOCAL_REALM_BASE	+ '4413/form/#/';
-	const PRIVATE_LOCAL_SERVICE		= process.env.PRIVATE_LOCAL_SERVICE		|| LOCAL_REALM_BASE	+ '4401/private/#/';
-	const PUBLIC_LOCAL_SERVICE		= process.env.PUBLIC_LOCAL_SERVICE		|| LOCAL_REALM_BASE	+ '4402/public/#/';
+	const LOCAL_REALM_BASE 				= process.env.LOCAL_REALM_BASE			|| LOCAL_PROTOCOL	+ 'localhost:';
+	const AUTH_LOCAL_SERVICE			= process.env.AUTH_LOCAL_SERVICE		|| LOCAL_REALM_BASE	+ '4420/auth-element/#/';
+	// const CHAT_LOCAL_SERVICE			= process.env.CHAT_LOCAL_SERVICE		|| LOCAL_REALM_BASE	+ '4415/chat/#/';
+	// const CMS_LOCAL_SERVICE			= process.env.CMS_LOCAL_SERVICE			|| LOCAL_REALM_BASE	+ '4411/cms/#/';
+	// const FORM_LOCAL_SERVICE			= process.env.FORM_LOCAL_SERVICE		|| LOCAL_REALM_BASE	+ '4423/form-element/#/';
+	// const PRIVATE_LOCAL_SERVICE		= process.env.PRIVATE_LOCAL_SERVICE		|| LOCAL_REALM_BASE	+ '4421/private-element/#/';
+	// const PUBLIC_LOCAL_SERVICE		= process.env.PUBLIC_LOCAL_SERVICE		|| LOCAL_REALM_BASE	+ '4402/public/#/';
 	// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////	REMOTELY REGISTERED SERVICES
 	const TARGET_REMOTE_REALM		= process.env.TARGET_REMOTE_REALM		|| TARGET_REALM		+ TARGET_DOMAIN;
 	const TARGET_REMOTE_REALM_BASE	= process.env.REMOTE_REALM_BASE			|| REMOTE_PROTOCOL	+ TARGET_REMOTE_REALM;
-	const AUTH_REMOTE_SERVICE		= process.env.AUTH_REMOTE_SERVICE		|| TARGET_REMOTE_REALM_BASE	+ '/auth/#/';
+	// const AUTH_REMOTE_SERVICE		= process.env.AUTH_REMOTE_SERVICE		|| TARGET_REMOTE_REALM_BASE	+ '/auth-element/#/';
 	const CHAT_REMOTE_SERVICE		= process.env.CHAT_REMOTE_SERVICE		|| TARGET_REMOTE_REALM_BASE	+ '/chat/#/';
 	const CMS_REMOTE_SERVICE		= process.env.CMS_REMOTE_SERVICE		|| PROD_REMOTE_REALM_BASE	+ '/cms';
-	const FORM_REMOTE_SERVICE		= process.env.FORM_REMOTE_SERVICE		|| TARGET_REMOTE_REALM_BASE	+ '/form/#/';
-	const PRIVATE_REMOTE_SERVICE	= process.env.PRIVATE_REMOTE_SERVICE	|| TARGET_REMOTE_REALM_BASE	+ '/private/#/';
+	const FORM_REMOTE_SERVICE		= process.env.FORM_REMOTE_SERVICE		|| TARGET_REMOTE_REALM_BASE	+ '/form-element/#/';
+	const PRIVATE_REMOTE_SERVICE	= process.env.PRIVATE_REMOTE_SERVICE	|| TARGET_REMOTE_REALM_BASE	+ '/private-element/#/';
 	const PUBLIC_REMOTE_SERVICE		= process.env.PUBLIC_REMOTE_SERVICE		|| TARGET_REMOTE_REALM_BASE	+ '/public/#/';
 	// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////	MISC ASSETS
 	const ASSETS_BUCKET	= process.env.ASSETS_BUCKET	|| 'https://storage.googleapis.com/' + TARGET_DOMAIN;
@@ -61,9 +61,9 @@ const FORM_SERVICE		= process.env.FORM_SERVICE		|| FORM_REMOTE_SERVICE;
 const PRIVATE_SERVICE	= process.env.PRIVATE_SERVICE	|| PRIVATE_REMOTE_SERVICE;
 const PUBLIC_SERVICE	= process.env.PUBLIC_SERVICE	|| PUBLIC_REMOTE_SERVICE;
 // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	REGISTERED FORMS
-const FORM_CONTACT		= process.env.FORM_CONTACT		|| 'pVYsWezP';
-const FORM_REGISTER		= process.env.FORM_REGISTER		|| 'axJT9FLX';
-const FORM_FEEDBACK		= process.env.FORM_FEEBACK		|| 'vIKRhjtU';
+// const FORM_CONTACT		= process.env.FORM_CONTACT		|| 'pVYsWezP';
+// const FORM_REGISTER		= process.env.FORM_REGISTER		|| 'axJT9FLX';
+// const FORM_FEEDBACK		= process.env.FORM_FEEDBACK		|| 'vIKRhjtU';
 
 
 export const environment = {
