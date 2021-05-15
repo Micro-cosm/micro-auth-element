@@ -1,22 +1,22 @@
 
-// Todo: Update to v7 environment
-// V6
+
+// V4
 import { fb		} from "./fb.stage";
-import { local	} from "./local";
+
 
 // ENV
-const ALIAS			= process.env.TARGET_ALIAS	|| 'dev';
+const ALIAS			= process.env.TARGET_ALIAS	|| 'stage';
 const DOMAIN		= process.env.TARGET_DOMAIN	|| 'weja.us';
 const REALM			= process.env.TARGET_REALM	|| 'too.fb.';
-// const ROUTE_BASE	= process.env.TARGET_REALM	|| '/';
-const TITLE			= process.env.TITLE			|| 'StèJá Föö(local)';
+const ROUTE_BASE	= process.env.TARGET_REALM	|| '/';
+const TITLE			= process.env.TITLE			|| 'StèJá Föö(remote)';
 const DEBUG			= process.env.DEBUG			|| 'true';
 const LOGS			= process.env.LOGS			|| 'true';
 const CMS_SHEET 	= process.env.CMS_SHEET 	|| 'https://docs.google.com/spreadsheets/d/14T-GM6Cx-OpT_s4MCytc1VL8fQax8eOC8IHdne-1Wf4/edit#gid=1055269632';
 
 // DERIVED
 const REALM_BASE	= process.env.REALM_BASE	|| 'https://'+REALM+DOMAIN;									// THIS MIFE
-const AUTH_MIFE		= local.AUTH_SERVICE;
+const AUTH_MIFE		= process.env.AUTH_MIFE		|| REALM_BASE+ROUTE_BASE+'#/';							// THIS MIFE
 const THIS_MIFE		= AUTH_MIFE;
 
 const CHAT_MIFE		= process.env.CHAT_MIFE		|| REALM_BASE+'/chat/#/';								  // OTHER MIFEN
@@ -77,5 +77,3 @@ export const environment = {
 	logs:	Boolean(LOGS	=== 'true' ),
 	timeZone: 'America/Denver'
 };
-
-import 'zone.js/dist/zone-error';

@@ -1,9 +1,7 @@
 FROM	nginx
 
-ARG TARGET_ALIAS
-ARG TARGET_IMAGE_TAG
-ARG SERVICE_NAME
-ARG TARGET_PROJECT_ID
+ARG		TARGET_ALIAS
+ENV		TARGET_ALIAS=${TARGET_ALIAS}
 
 ADD https://github.com/kyubisation/angular-server-side-configuration/releases/download/v11.0.2/ngssc_64bit /usr/sbin/ngssc
 

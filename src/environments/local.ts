@@ -1,0 +1,13 @@
+
+
+const LOCALHOST = 'http://localhost:'
+
+export const local = {
+	"AUTH_MIFE": 	LOCALHOST+'4422/#/',
+	"CHAT_MIFE": 	LOCALHOST+'4415/#/',
+	"FORM_MIFE": 	LOCALHOST+'4423/#/',
+	"PRIVATE_MIFE":	LOCALHOST+'4421/#/',
+	"PUBLIC_MIFE": 	LOCALHOST+'4402/#/',
+	"CMS_SERVICE": 	LOCALHOST+'4411/',
+	"AUTH_SERVICE":	LOCALHOST+'5002/'
+}
